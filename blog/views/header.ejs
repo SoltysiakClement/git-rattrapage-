@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<div>
+    
+        <nav class="dropdownmenu">
+            
+            <ul>
+              <li><a href="/">Halloween</a></li>
+              <li><a href="/">Home</a></li>
+
+               <% if (locals.isConnected != undefined) { %> 
+
+                <li><a href="/articleForm">Ajouter un article</a></li>
+                <li><a href="/logout">Deconnexion</a></li>
+             <% } %>  
+             <% if (locals.isConnected == undefined) { %> 
+              <li><a href="/connectionForm">Connexion</a></li>
+           <% } %> 
+             
+            </ul>
+          </nav>
+</div>

@@ -1,0 +1,12 @@
+<%- include('header') -%>
+
+<div id="form">
+    <h1>Formulaire d'article : </h1>
+    <form method="post"enctype="multipart/form-data">
+        <input type="text" placeholder="titre" name="titre"/>
+        <input type="text" placeholder="description"  name="description">
+        <input type="file"  name="fichier">
+        <button>Envoyer</button>
+    </form>
+</div>
+<%- include('footer') -%>

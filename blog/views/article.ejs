@@ -1,0 +1,39 @@
+<%- include('header') -%>
+<div class="page-container">
+    <a href="http://localhost:3000/">Retour</a>
+    <div class="article-container"> 
+       
+        <div class="article">
+            <h2 class="articleTitre"><%= article.titre %></h2>
+            <img src="/images/<%= article.image %>" alt="<%= article.image %>" class="article-img">
+            <p class="articleDesc"><%= article.description %></p>
+        </div>
+    </div>
+
+    <div class="commentaire-container">
+        <hr>
+            <%  for (const commentaire of commentaires) { 
+            
+            %>
+            
+                <div class="commentaire">
+                    <h3 class="pseudo"><%= commentaire.pseudo %> </h3>
+                    <p class="description"><%= commentaire.description %></p>
+                    <p class="date"><%= commentaire.date.toLocaleDateString("fr") %></p>
+                </div>
+            
+            <% } %>
+    </div>
+
+
+    <div id="formCommentaire">
+        <h1>Laissez votre super commentaire : </h1>
+        <form method="post">
+            <input type="text" name="pseudo" placeholder="pseudo"/>
+            <input type="text" name="description" placeholder="Votre commentaire"/>
+            <button>Envoyer</button>
+        </form>
+    </div>
+</div>
+<%- include('footer') -%>
+

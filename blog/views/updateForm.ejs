@@ -1,0 +1,11 @@
+<%- include('header') -%>
+
+<div id="form">
+    <h1>Modification de l'article : </h1>
+    <form method="post" >
+        <input type="text" placeholder="titre" name="titre" value="<%= article[0].titre %>"/>
+        <input type="text" placeholder="description"  name="description" value="<%= article[0].description %>">
+        <button>Envoyer</button>
+    </form>
+</div>
+<%- include('footer') -%>

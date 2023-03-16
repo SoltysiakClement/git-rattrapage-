@@ -1,0 +1,36 @@
+# Ignore les fichiers de configuration
+node_modules/
+npm-debug.log
+.env
+
+# Ignore les fichiers de compilation
+lib/
+dist/
+build/
+out/
+.cache/
+.nuxt/
+.next/
+*.log
+
+# Ignore les fichiers d'éditeur
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.bak
+*.swp
+*~.nfs*
+Thumbs.db
+.DS_Store
+
+# Ignore les fichiers de sauvegarde de la base de données
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+# Ignore les fichiers de dépendances
+yarn.lock
+package-lock.json
+.pnp.*
